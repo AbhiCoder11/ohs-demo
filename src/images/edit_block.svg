@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #eee;
+      }
+
+      .cls-2 {
+        fill: #18a55d;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+
+      .cls-5 {
+        filter: url(#Rectangle_16);
+      }
+    </style>
+    <filter id="Rectangle_16" x="0" y="0" width="40" height="40" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_173" data-name="Group 173" transform="translate(-1217 -194)">
+    <g class="cls-5" transform="matrix(1, 0, 0, 1, 1217, 194)">
+      <g id="Rectangle_16-2" data-name="Rectangle 16" class="cls-1" transform="translate(3 2)">
+        <rect class="cls-3" width="34" height="34" rx="5"/>
+        <rect class="cls-4" x="0.5" y="0.5" width="33" height="33" rx="4.5"/>
+      </g>
+    </g>
+    <path id="ic_edit_24px" class="cls-2" d="M3,15.667V19H6.333l9.831-9.831L12.831,5.835ZM18.742,6.591a.885.885,0,0,0,0-1.253l-2.08-2.08a.885.885,0,0,0-1.253,0L13.782,4.884l3.333,3.333,1.627-1.627Z" transform="translate(1227 202.003)"/>
+  </g>
+</svg>

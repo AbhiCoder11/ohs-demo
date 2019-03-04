@@ -1,0 +1,1075 @@
+body {
+    background: #fff;
+    padding: 0px;
+    margin: 0px;
+    font-size: 15px;
+    color: #000;
+    font-family: 'Lato';
+}
+
+/* Font Family here */
+
+@font-face {
+    font-family: 'lato';
+    src: url('../fonts/lato-regular.woff2') format('woff2'),
+        url('../fonts/lato-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('../fonts/lato-bold.woff2') format('woff2'),
+        url('../fonts/lato-bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('../fonts/lato-semibold.woff2') format('woff2'),
+        url('../fonts/lato-semibold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+/*Common styles*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label {
+    margin: 0px;
+    padding: 0px;
+}
+
+.row {
+    margin: 0px !important;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px !important;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px !important;
+}
+
+.margin-bottom-40 {
+    margin-bottom: 40px !important;
+}
+
+.float-left {
+    float: left !important;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.padding-0 {
+    padding: 0px !important;
+}
+
+.padding-left-0 {
+    padding-left: 0px !important;
+}
+
+.padding-right-0 {
+    padding-right: 0px !important;
+}
+
+.relative {
+    position: relative !important;
+}
+
+.width-100 {
+    width: 100%;
+    display: inline-table;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+}
+
+.login-page {
+    width: 330px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.account-page {
+    background: #044C92;
+    width: 100%;
+    height: 100vh;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: auto;
+}
+
+.form-groups {
+    margin: 0px 0px 10px 0px;
+}
+
+.form-groups input.validate {
+    background: #fff;
+    width: 100%;
+    border-radius: 20px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #000;
+    font-family: 'lato';
+    margin: 0px;
+    font-weight: 400;
+}
+
+.login-page .form-groups input.validate {
+    padding-left: 40px;
+}
+
+.username,
+.password {
+    background: url(../images/login_user.svg) no-repeat left center;
+    width: 20px;
+    height: 22px;
+    display: block;
+    text-indent: -999em;
+    position: absolute;
+    top: 10px;
+    left: 24px;
+}
+
+.password {
+    background: url(../images/login_password.svg) no-repeat left center;
+}
+
+.green-btn {
+    background: #5CB85C;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'lato';
+    font-weight: 600;
+    color: #fff;
+}
+
+.green-btn:hover {
+    background: #55ad55;
+}
+
+.forgot {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'lato';
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+
+/*Home page design start here...*/
+.mainpage {
+    background: #FFFFFF;
+    width: 100%;
+    display: inline-table;
+    margin-bottom: 50px;
+}
+
+.main-right {
+    width: 100%;
+    float: right;
+}
+
+header {
+    background: #fff;
+    box-shadow: 1px 1px 1px 0px #dedede;
+    min-height: 81px;
+    margin-bottom: 20px;
+    padding: 0px 50px 0px 65px;
+    box-sizing: border-box;
+}
+
+header a {
+    position: relative;
+    top: 30px;
+}
+
+.mobile-menu {
+    background: url(../images/menu.svg) no-repeat left center;
+    width: 24px;
+    height: 24px;
+    text-indent: -999em;
+    display: block;
+}
+
+.header-right a {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'lato';
+    color: #666666;
+    margin: 0px 20px 0px 0px;
+    height: auto;
+    display: block;
+    padding: 0px 0px 0px 25px;
+    text-transform: capitalize;
+
+}
+
+.header-right a.settings {
+    background: url(../images/settings.svg) no-repeat left center;
+}
+
+.header-right a.logout {
+    background: url(../images/logout.svg) no-repeat left center;
+    height: 20px;
+}
+
+.main-left {
+    display: none;
+}
+
+.menu {
+    background: #044C92;
+    transform: translateX(-105%);
+}
+
+.main-left.showmenu {
+    display: block;
+}
+
+.showmenu .menu {
+    transform: translateX(0%);
+    width: 25%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    float: left;
+    z-index: 8;
+}
+
+.showmenu+.main-right {
+    width: 75%;
+}
+
+.menu .logo {
+    text-align: center;
+    width: 100%;
+    min-height: 80px;
+}
+
+.menu li {
+    border-bottom: 1px solid #4D6B89;
+
+}
+
+.menu li a {
+    /* background: url(../images/menu-sample.svg) no-repeat 20px center !important; */
+    padding: 20px 20px 20px 60px;
+    color: #fff;
+    display: block;
+    box-sizing: border-box;
+}
+
+.menu li a.active,
+.menu li a:hover {
+    background-color: #2292DC;
+}
+
+.menu li a.management {
+    background: url(../images/management.svg) no-repeat 20px center;
+}
+
+.menu li a.domain {
+    background: url(../images/domain.svg) no-repeat 20px center;
+}
+
+.menu li a.module {
+    background: url(../images/module.svg) no-repeat 20px center;
+}
+
+.menu li a.department {
+    background: url(../images/department.svg) no-repeat 20px center;
+}
+
+.menu li a.role {
+    background: url(../images/role.svg) no-repeat 20px center;
+}
+
+.menu li a.user {
+    background: url(../images/user.svg) no-repeat 20px center;
+}
+
+.menu li a.admin {
+    background: url(../images/admin.svg) no-repeat 20px center;
+}
+
+.welcome-row {
+    background: #DFF2FF;
+    border: 1px solid #044C92;
+    padding: 25px 15px !important;
+    margin: 0 auto 16px !important;
+    float: none !important;
+    display: table;
+    border-radius: 5px;
+}
+
+.welcome-row h1,
+.welcome-row p {
+    font-family: 'lato';
+    font-weight: 400;
+    color: #333333;
+    font-size: 14px;
+}
+
+.welcome-row p {
+    color: #666666;
+    text-align: right;
+}
+
+.table-header label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    font-family: 'lato';
+    margin: 7px 25px 0px 0px;
+}
+
+.select-box select {
+    background: #fff;
+    border: 1px solid #707070;
+    font-family: 'lato';
+    font-weight: 500;
+    height: 37px;
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+    color: #666666;
+}
+
+.center-aligned {
+    margin: 0 auto 16px !important;
+    float: none !important;
+    display: table;
+    padding: 0px !important;
+}
+
+.mat-tables table tbody tr {
+    border: 0px;
+}
+
+.mat-tables table tbody tr th {
+    background: #2292DC;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'lato';
+    padding: 15px;
+    border-radius: 0px;
+}
+
+.mat-tables table tbody tr td {
+    color: #666666;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'lato';
+    padding: 15px;
+    border-radius: 0px;
+}
+
+.mat-tables table tbody tr:nth-child(even) {
+    background: #EEEEEE;
+}
+
+.mat-tables table tbody {
+    border: 1px solid #707070;
+}
+
+.action-items a {
+    text-indent: -999em;
+    display: block;
+    float: left;
+    margin: 0px 0px 0px 5px;
+
+}
+
+.action-items .edit {
+    background: url(../images/edit.svg) no-repeat left center;
+    width: 24px;
+    height: 24px;
+}
+
+.action-items .delete {
+    background: url(../images/deactivate.svg) no-repeat left center;
+    width: 24px;
+    height: 24px;
+}
+
+.red-btn {
+    background: #F02326;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'lato';
+    color: #fff;
+    border: 0px;
+    text-transform: capitalize;
+}
+
+.red-btn:hover {
+    background: #f54e51;
+}
+
+.company-details {
+    background: #DFF2FF;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    padding: 30px 10px 30px 10px;
+}
+
+.company-details h1 {
+    font-size: 14px;
+    font-family: 'lato';
+    font-weight: 500;
+    color: #141414;
+    text-align: right;
+    float: left;
+    width: 70%;
+}
+
+.edit-bg {
+    background: url(../images/edit_white.svg) no-repeat left center;
+    width: 35px;
+    height: 30px;
+    text-indent: -999em;
+    display: block;
+    float: right;
+}
+
+.company-details table tr {
+    border: 0px;
+}
+
+.company-details table td {
+    padding: 5px 5px 10px 5px;
+    font-family: 'lato';
+    color: #303030;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.company-details table td:nth-child(odd) {
+    text-align: right;
+    font-size: 12px;
+    color: #666666;
+    font-weight: 500;
+    font-family: 'lato';
+}
+
+.page-title {
+    background: #044C92;
+    border-radius: 5px;
+    padding: 25px 15px !important;
+}
+
+.page-title h1 {
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'lato';
+}
+
+.company-details .input-field.form-groups input.validate {
+    border-radius: 3px;
+    height: 35px;
+    border: 1px solid #dedede;
+}
+
+.collapse-view {
+    background: url(../images/collapse.svg) no-repeat left center;
+    width: 34px;
+    height: 30px;
+    text-indent: -999em;
+    display: block;
+    position: absolute;
+    left: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    cursor: pointer;
+}
+
+.management-view.showleftbar .company-details {
+    position: fixed !important;
+    top: 0;
+    right: -100%;
+    transform: translateX(0%);
+}
+
+.company-view.showleftbar .company-details {
+    position: fixed !important;
+    top: 0;
+    right: -100%;
+    transform: translateX(0%);
+}
+
+.showleftbar .company-setup {
+    width: 100% !important;
+}
+
+.company-details button {
+    border-radius: 5px;
+    text-transform: uppercase;
+    width: 101px;
+}
+
+.company-view .collapse-view.deveice-hide,
+.management-view .collapse-view.deveice-hide {
+    visibility: hidden;
+}
+
+.showleftbar .collapse-view.deveice-hide,
+.management-view.showleftbar .collapse-view.deveice-hide {
+    transform: rotate(-180deg);
+    left: auto;
+    top: 250px;
+    position: fixed;
+    visibility: visible;
+    right: 0%;
+}
+
+.management-view.showleftbar .company-table {
+    width: 100% !important;
+}
+
+/*Home page desing end here...*/
+/*Footer design start here ...*/
+.footer {
+    min-height: 52px;
+    background: #fff;
+    box-shadow: 1px 1px 1px 2px #dedede;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 8;
+}
+
+.footer p {
+    color: #666666;
+    font-weight: 500;
+    font-family: 'lato';
+    font-size: 12px;
+
+}
+
+/*Footer design end here...*/
+
+/*Company setup page start here...*/
+.company-setup .form-groups label {
+    font-size: 14px;
+    color: #333333;
+    font-family: 'lato';
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+.company-setup .form-groups .input-field {
+    margin: 0px;
+}
+
+.company-setup .form-groups .input-field input {
+    background: #DFF2FF;
+    border-radius: 3px;
+    height: 35px;
+    border: 1px solid #999999;
+}
+
+/*Compnay setup page end here...*/
+
+/*File upload design start here....*/
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    left: 10px
+}
+
+.upload-btn-wrapper .btn {
+    padding: 0;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #044C92 url(../images/upload.svg) no-repeat 15px center;
+    text-transform: capitalize;
+    height: 35px;
+    width: 160px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.assign-dept-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    left: 10px
+}
+
+.assign-dept-btn-wrapper .btn {
+    padding: 0;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #044C92 url(../images/assign_dept.svg) no-repeat 15px center;
+    text-transform: capitalize;
+    height: 35px;
+    width: 160px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.user-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    left: 10px
+}
+
+.user-btn-wrapper .btn {
+    padding: 0;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #044C92 url(../images/send_user.svg) no-repeat 15px center;
+    text-transform: capitalize;
+    height: 35px;
+    width: 160px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+}
+
+.margin-top-bottom-40 {
+    margin: 40px 0px;
+}
+
+.company-deatls-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-deatls-btn button {
+    width: 110px;
+    margin-right: 20px;
+    border-radius: 4px;
+    float: left;
+    margin-top: 50px;
+}
+
+/*Tab view*/
+.company-tab {}
+
+.tab-view {
+    padding: 0px !important;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.tab-view .tab li {
+    float: left;
+    width: 25%;
+}
+
+.tab-view .tab li a {
+    color: #fff;
+    font-family: 'lato';
+    font-weight: 400;
+    font-size: 14px;
+    min-height: 44px;
+    text-align: center;
+    display: flex;
+    float: left;
+    padding: 0px 30px;
+    justify-content: center;
+    align-items: center;
+    background: #2292DC;
+    width: 100%;
+    border-left: 1px solid #fff;
+}
+
+.tab-view .tab li a.active {
+    color: #333;
+    background: #fff;
+}
+
+.tab-view-body {
+    width: 100%;
+}
+
+.tab-view-body h2 {
+    text-align: center;
+    font-size: 14px;
+    color: #000000;
+    font-weight: 500;
+    font-family: 'lato';
+    margin: 30px 0px
+}
+
+.tab-view-body .form-groups {
+    margin-bottom: 20px;
+    display: table;
+    width: 100%;
+}
+
+.tab-view-body .form-groups label {
+    font-size: 12px;
+    color: #333;
+    font-family: 'lato';
+    font-weight: 400;
+}
+
+.tab-view-body .form-groups p {
+    font-size: 12px;
+    font-family: 'lato';
+    font-weight: 500;
+    color: #000000;
+    width: 85%;
+    float: left;
+}
+
+.tab-view-body .form-groups a {
+    background: url(../images/edit_block.svg) no-repeat left center;
+    width: 30px;
+    height: 30px;
+    text-indent: -999em;
+    display: block;
+    float: right;
+    margin: -7px 0px 0px 0px;
+}
+
+.add-upload {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+.add-upload .btn {
+    background: #044C92 url(../images/add-upload.svg) no-repeat 15px center;
+    width: 175px;
+}
+.add-new {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+.add-new .btn {
+    background: #044C92 url(../images/add-new.svg) no-repeat 15px center;
+    width: 175px;
+}
+
+.tab-view-body .select-box label {
+    font-size: 14px;
+    padding-top: 4px;
+}
+
+.tab-view-body .select-box select {
+    height: 30px;
+    width: 80%;
+    border-radius: 3px;
+    border: 1px solid #999999;
+}
+
+.tab-view-body .select-box h3 {
+    font-weight: 500;
+    font-family: 'lato';
+    color: #030303;
+    font-size: 12px;
+}
+
+/*Custom checkbox*/
+.check-boxs {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check-boxs input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.check-boxs [type="checkbox"]:checked+span:not(.lever):before {
+    top: -2px;
+    left: 2px;
+    width: 12px;
+    height: 22px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.check-boxs:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check-boxs input:checked~.checkmark {
+    background-color: #fff;
+    border-radius: 3px;
+    width: 30px;
+    height: 28px;
+    border: 1px solid #999;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.check-boxs input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.check-boxs .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.dep-list-view .input-field input {
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #999999;
+    width: 100%;
+    float: left;
+}
+
+.dep-list-view h3 {
+    font-size: 12px;
+    font-family: 'lato';
+    font-weight: 500;
+    color: #030303;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.dep-list-view .select-box {
+    float: left;
+    width: 40%;
+}
+
+.dep-list-view .select-box select {
+    width: 100%;
+}
+
+.tab-view-body .form-groups label.check-boxs {
+    float: left;
+    padding: 0px 0px 0px 15px;
+    margin: 0px;
+}
+
+.dep-list {
+    margin-left: 45px !important;
+}
+
+.dep-list-view .input-field {
+    display: table;
+    width: 30%;
+    margin: 0px 0px 0px 15px;
+    float: left;
+}
+
+.ass-dep {
+    float: right;
+    left: -32px;
+}
+
+.dep-list-view table {
+    margin-left: 15px;
+}
+
+.dep-list-view table tr td {
+    text-align: left !important;
+}
+
+.dep-list-view .action-items a {
+    float: left;
+}
+
+.dep-list-view .action-items a.edit {
+    background: url(../images/edit.svg) no-repeat left center;
+    width: 24px;
+    height: 24px;
+}
+
+.dep-list-view .action-items a.delete {
+    background: url(../images/delete.svg) no-repeat left center;
+    width: 24px;
+    height: 24px;
+}
+
+.module-view .dep-list {
+    margin-left: 0px !important;
+}
+
+.module-view .dep-list-view .select-box {
+    width: 75%;
+}
+
+.tab-view-body .listuser-view .select-box select {
+    width: 100%;
+}
+
+.tab-view-body .listuser-view h2 {
+    margin-bottom: 20px;
+}
+
+.listuser-view .dep-list-view .action-items a.delete {
+    background: url(../images/deactivate.svg) no-repeat left center;
+    width: 24px;
+    height: 24px;
+}
+
+/*Modal Popup design start here....*/
+.modal .modal-content {
+    padding: 0px;
+}
+
+.modal-header {
+    background: #044C92;
+    min-height: 58px;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.modal-header h1 {
+    font-size: 14px;
+    font-family: 'lato';
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+}
+
+.modal-body .form-groups label {
+    font-size: 14px;
+    color: #333333;
+    font-family: 'lato';
+    font-weight: 400;
+    text-align: right;
+}
+
+.modal-body .form-groups .input-field {
+    margin: 0px;
+}
+
+.modal-body .form-groups {
+    margin-bottom: 10px;
+    display: table;
+    width: 100%;
+}
+
+.modal-body .form-groups .input-field input {
+    height: 30px;
+    background: #DFF2FF;
+    border-radius: 3px;
+    border: 1px solid #999999;
+}
+
+.modal-footer {
+    margin-bottom: 20px;
+}
+
+.modal-footer button {
+    margin-right: 30px !important;
+}
+
+.modal.location-modal {
+    width: 65%;
+}
+
+.modal.addnewmodal {
+    width: 35%;
+}
+
+.modal-body .form-groups .select-box select {
+    background: #DFF2FF;
+    height: 30px;
+}
+
+.top-show {
+    display: block;
+}
+.tab-view-body div.row.active {
+    display: block;
+}
+.tab-view-body div.row {
+    display: none;
+}
+
+/*Modal Popup design end here....*/

@@ -4,6 +4,9 @@ import 'materialize-css/dist/css/materialize.min.css';
 import './styles/style.css';
 import logo from "./images/logo.png";
 
+import userSchema from './localdb/userLocal';
+import history from './history';
+
 class App extends Component {
   state={
     userName:'',
@@ -14,16 +17,33 @@ class App extends Component {
   handlePassWord = e => this.setState({passWord:e.target.value});
 
   handleLogin = e =>{
+    console.log(userSchema)
     const {userName,passWord} = this.state
     const payLoad = {
       userName,
-      passWord:window.btoa(passWord),
+      passWord,
     }
     //console.log(payLoad);
     //api call to post payload
+    for(var i =0 ; i<userSchema.length;i++){
+      if(userSchema[i].name == userName && userSchema[i].password == passWord){
+        alert('login success');
+        if(this.props.history.location.pathname == '/'){
+          this.props.history.push('/company');
+        }
+        break;
+      }
+      else{
+        alert('error');
+        break;
+      }
+    }
+
   }
 
   render() {
+    console.log('app history')
+    console.log(history);
     return (
       <div className="container">
         <div className="account-page">

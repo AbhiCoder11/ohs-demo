@@ -9,8 +9,18 @@ import comparr  from '../localdb/companyLocal'
         $('.main-left').addClass('showmenu');
     }
    }
+   showRight(){
+    if ($('.management-view').hasClass('showleftbar')) {
+      $('.management-view').removeClass('showleftbar');
+  } else {
+      $('.management-view').addClass('showleftbar');
+  }
+   }
    logOut(){
      this.props.history.push('/')
+   }
+   createCompany(){
+     this.props.history.push('/companycreate')
    }
 
      render(){
@@ -99,7 +109,7 @@ import comparr  from '../localdb/companyLocal'
                             </div>
                           </div>
                           <div className="float-right">
-                            <button className="btn waves-effect waves-light red-btn" type="submit" name="action">Setup
+                            <button className="btn waves-effect waves-light red-btn" type="submit" name="action" onClick={this.createCompany.bind(this)}>Setup
                               Company
                             </button>
                           </div>
@@ -154,7 +164,7 @@ import comparr  from '../localdb/companyLocal'
                       <div className="col s12 m12 l4 x4 padding-right-0">
                         <span className="collapse-view deveice-hide"> collapse</span>
                         <div className="company-details relative">
-                          <span className="collapse-view"> collapse</span>
+                          <span className="collapse-view" onClick={this.showRight.bind(this)}> collapse</span>
                           <div className="row margin-bottom-40">
                             <h1>
                               COMPANY DETAILS
